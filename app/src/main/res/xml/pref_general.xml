@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Login">
+        <EditTextPreference
+            android:key="uzh_username"
+            android:title="@string/uzh_shortname"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:summary="Dein UZH Shortname, z.B. jabond"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="uzh_password"
+            android:title="@string/password"
+            android:selectAllOnFocus="true"
+            android:inputType="textPassword"
+            android:summary="Wird nie von uns gespeichert"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Server">
+        <ListPreference
+            android:key="serverType"
+            android:title="Server"
+            android:entries="@array/pref_server_types_titles"
+            android:entryValues="@array/pref_server_types"
+            android:defaultValue="default"
+            android:summary="bestande.ch oder Eigener">
+        </ListPreference>
+        <EditTextPreference
+            android:key="customServer"
+            android:title="Eigener Server"
+            android:inputType="textUri"
+            android:summary="IP oder Domain" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Aktualisierung (Beta)">
+        <ListPreference
+            android:key="refreshInterval"
+            android:title="Intervall"
+            android:entries="@array/pref_sync_frequency_titles"
+            android:defaultValue="MANUALLY"
+            android:negativeButtonText="Abbrechen"
+            android:positiveButtonText="OK"
+            android:entryValues="@array/pref_sync_frequency_values" />
+        <SwitchPreference
+            android:key="showFailedStatus"
+            android:title="Status in Benachrichtigungscenter"
+            android:summary="Zeige letzte und nächste Aktualisierung"
+            android:defaultValue="false"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

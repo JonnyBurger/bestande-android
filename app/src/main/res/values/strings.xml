@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Bestande</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>Manuell</item>
+        <item>Alle 15 Minuten</item>
+        <item>Alle 30 Minuten</item>
+        <item>Jede Stunde</item>
+        <item>Alle 3 Stunden</item>
+        <item>Alle 8 Stunden</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>MANUALLY</item>
+        <item>MIN_15</item>
+        <item>MIN_30</item>
+        <item>MIN_60</item>
+        <item>HOUR_3</item>
+        <item>HOUR_8</item>
+    </string-array>
+    <string-array name="pref_server_types_titles">
+        <item>Standard (bestande.ch)</item>
+        <item>Eigener</item>
+    </string-array>
+    <string-array name="pref_server_types">
+        <item>default</item>
+        <item>custom</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="settings">Einstellungen</string>
+    <string name="uzh_shortname">Username</string>
+    <string name="password">Passwort</string>
+    <string name="passwort_explanation">Dein Passwort oder deine Daten werden nie von uns
+        gespeichert oder angeschaut. Wenn du verhindern möchtest, dass dein
+        Passwort durch unseren Server geht, kannst du deinen eigenen Server aufsetzen und
+    unten angeben.</string>
+    <string name="title_activity_detail">DetailActivity</string>
+</resources>
