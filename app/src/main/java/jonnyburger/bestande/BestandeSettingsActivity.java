@@ -287,7 +287,7 @@ public class BestandeSettingsActivity extends AppCompatActivity {
                 String text = "Konnte nicht nach neuen Noten suchen. " + reason;
                 android.support.v4.app.NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext())
                         .setSmallIcon(R.drawable.logo)
-                        .setContentTitle("Prüfung fehlgeschlagen")
+                        .setContentTitle("Laden fehlgeschlagen")
                         .setColor(ContextCompat.getColor(context, R.color.red))
                         .setContentText(text)
                         .setStyle(new android.support.v4.app.NotificationCompat.BigTextStyle().bigText(text));
