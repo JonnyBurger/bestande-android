@@ -99,6 +99,13 @@ public class ListAdapter extends ArrayAdapter<Credit> {
             else {
                 header.setVisibility(View.GONE);
             }
+            TextView countsView = (TextView) v.findViewById(R.id.module_counts);
+            if (CountsTowardsAvgPersister.get(p, getContext())) {
+                countsView.setText("Ø");
+            }
+            else {
+                countsView.setText("");
+            }
         }
 
         return v;

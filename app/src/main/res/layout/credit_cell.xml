@@ -62,4 +62,12 @@
         android:textSize="13dp"
         android:textColor="#aaaaaa"
         android:id="@+id/module_grade"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/module_grade"
+        android:layout_below="@+id/module_name"
+        android:textSize="13dp"
+        android:textColor="#aaaaaa"
+        android:id="@+id/module_counts"/>
 </RelativeLayout>
